@@ -1,7 +1,16 @@
 import React from 'react';
+import InputImage from './InputImage';
+import DisplayImage from './DisplayImage';
 
-const Root = () => {
-  return ( <div>Hello world</div>)
+class ImageFeed extends React.Component {
+  render() {
+    return(
+      <div className='ui container'>
+        <InputImage />
+        <DisplayImage />
+      </div>
+    )
+  }
 }
 
-export default Root;
+export default ImageFeed;
