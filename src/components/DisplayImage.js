@@ -11,9 +11,9 @@ class DisplayImage extends React.Component {
     } else {
       return this.props.list.map(list => {
         return (
-          <div className="item" key={list.id}>
-            <div> {list.title}</div>
-            <img src={`${list.url}`} alt="Smiley face" height="42" width="42" />
+          <div className="ui placeholder segment fluid" key={list.id} style={{backgroundColor: 'white'}}>
+            <div className='ui center aligned fluid header' >{list.title}</div>
+            <img src={`${list.url}`} alt={`${list.title}`}className="ui image fluid" />
           </div>
         )
       })
