@@ -5,6 +5,6 @@ export default (state = [], action) => {
     case 'FETCH_LIST':
       return [...state]
     default:
-    return state;
+      return state;
   }
 }
