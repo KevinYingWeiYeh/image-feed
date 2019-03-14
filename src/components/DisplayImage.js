@@ -5,6 +5,7 @@ import { fetchList } from '../actions'
 class DisplayImage extends React.Component {
 
   renderImages() {
+    /* eslint react/prop-types: 0 */
     if(this.props.list.length === 0) {
       return null;
     } else {
@@ -12,7 +13,7 @@ class DisplayImage extends React.Component {
         return (
           <div className="item" key={list.id}>
             <div> {list.title}</div>
-            <div> {list.url}</div>
+            <img src={`${list.url}`} alt="Smiley face" height="42" width="42" />
           </div>
         )
       })

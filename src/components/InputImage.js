@@ -14,6 +14,7 @@ class InputImage extends React.Component {
   }
 
   onSubmit = formValues => {
+    /* eslint react/prop-types: 0 */
     formValues.preventDefault();
     this.props.createImage(formValues.target)
   }
